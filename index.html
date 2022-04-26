@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" char-set="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y:auto;
+  height:80vh;
+  charset="utf-8"
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<script type="text/javascript" src="main.js"  charset="utf-8"></script>
+<script type="text/javascript" src="events.js"  charset="utf-8"></script>
+<script type="text/javascript" src="goblin.js"  charset="utf-8"></script>
+<script type="text/javascript" src="guild.js"  charset="utf-8"></script>
+<script type="text/javascript" src="town.js"  charset="utf-8"></script>
+<script type="text/javascript" src="bar.js"  charset="utf-8"></script>
+<script type="text/javascript" src="slime.js"  charset="utf-8"></script>
+<script type="text/javascript" src="orc.js"  charset="utf-8"></script>
+<script type="text/javascript" src="tentacle.js"  charset="utf-8"></script>
+<script type="text/javascript" src="finalboss.js"  charset="utf-8"></script>
+<script type="text/javascript" src="friendship.js"  charset="utf-8"></script>
+<script type="text/javascript" src="treasure.js"  charset="utf-8"></script>
+<script type="text/javascript" src="loan.js"  charset="utf-8"></script>
+<script type="text/javascript" src="prostitute.js"  charset="utf-8"></script>
+<script type="text/javascript" src="status_ev.js"  charset="utf-8"></script>
+<script type="text/javascript" src="btn.js"  charset="utf-8"></script>
+
+</head>
+
+<body onload="load()">
+
+<h2>女骑士模拟器 </h2>
+<p><button onclick="newgame()">开始</button><button onclick="pause_btn()">暂停</button><button onclick="step_btn()">单步</button><button onclick="auto_btn()">自动</button><button onclick="fast_btn()">快速</button></p>
+<p id="attribute">本游戏纯属虚构，如有雷同，纯属巧合。登场人物均满十八岁。</p>
+
+<div class="row">
+  <div class="column left">
+	<p id="status"></p>
+  </div>
+  <div class="column right" id="bottom-right">
+	<p id="gamelog"></p>
+  </div>
+</div>
+
+</body>
+</html>
